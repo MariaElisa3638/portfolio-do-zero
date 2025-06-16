@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
+    --border-color: #2c2d30;
     --primary-color: #f0f0f0;
     /* Cor primária */
     --primary-bg-color: #111217;
@@ -6,6 +9,7 @@
     --secondary-color: #6c757d;
     /* Cor secundária */
     --title-color: #9a9a9c;
+    --text-color: #9a9a9a;
     --link-color: #9a9a9c;
     --icon-color: #298bee;
 
@@ -21,18 +25,128 @@
     /*remove os marcadores de lista*/
 }
 
-body{
+body {
     background: var(--primary-bg-color);
+    font-family: 'Inter', sans-serif;
 
 }
-i{
+
+a {
+    text-decoration: none;
+}
+
+i {
     color: var(--icon-color);
 }
 
-.header{
+.header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.header__toggle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__brand .brand__logo {
+    width: 3, 25rem;
+    height: 3.25rem;
+}
+
+
+#toggleTheme {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.menu__item {
+    width: 100%;
+}
+
+.menu--mobile {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-bg-color);
+}
+
+.menu--mobile .menu__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: .5rem;
+}
+
+.menu__link.active .menu__icon,
+.menu__link .menu_text,
+.menu__link:hover .menu__icon,
+.menu__link:hover .menu_text {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.menu__icon,
+.menu_text {
+    color: var(--text-color);
+}
+
+.menu__icon {
+    font-size: 1.5rem;
+}
+
+.menu__text {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.header__nav {
+    display: none;
+}
+
+.menu--principal {
+    gap: 1rem;
+
+}
+
+@media(min-width:768px) {
+    .header{
+        position: fixed;
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem 6rem;
+        background: var(--primary-bg-color) ;
+    }
+    .nav--mobile {
+        display: none;
+    }
+
+    .header__nav {
+        display: flex;
+    }
+
+    .header__nav, .header__toggle {
+        min-width: 30%;
+    }
+
+}
+
+@media(min-width:1400px) {
+    .header{
+        position: fixed;
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem 15rem;
+    }
 }
