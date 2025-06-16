@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Maria Elisa</title>
-    <meta name="description" content="Portfólio de Maria Elisa, desenvolvedora web, para compartilhar projetos e habilidades desenvolvidas.">
+    <meta name="description"
+        content="Portfólio de Maria Elisa, desenvolvedora web, para compartilhar projetos e habilidades desenvolvidas.">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <header class="header">
+        <nav class="header__nav">
+            <ul class="menu menu--principal">
+                <li class="menu__item"><a href="#home" class="menu__link active"><span
+                            class="menu__text">Home</span></a></li>
+
+                <li class="menu__item"><a href="#projetos" class="menu__link"><span
+                            class="menu__text">Projetos</span></a></li>
+
+                <li class="menu__item"><a href="#sobre" class="menu__link"><span class="menu__text">Sobre</span></a>
+                </li>
+
+                <li class="menu__item"><a href="#contato" class="menu__link"><span class="menu__text">Contato</span></a>
+                </li>
+            </ul>
+        </nav>
+
         <div class="header__brand">
-                    <img  class="brand__logo" src="assets/images/logo.png" alt="Logo ME">
+            <img class="brand__logo" src="assets/images/logo.png" alt="Logo ME">
 
         </div>
-        <i class="bi bi-moon-stars"></i>
+        <div class="header__toggle"> <i id="toggleTheme" class="bi bi-moon-stars"></i></div>
+
     </header>
+
+
+    <nav class="nav--mobile">
+        <ul class="menu menu--mobile">
+            <li class="menu__item"><a href="#home" class="menu__link active"><i class="menu__icon bi bi-house"></i><span
+                        class="menu__text">Home</span></a></li>
+
+            <li class="menu__item"><a href="#projetos" class="menu__link"><i class="bi bi-window-stack"></i><span
+                        class="menu__text">Projetos</span></a></li>
+
+            <li class="menu__item"><a href="#sobre" class="menu__link"><i class="menu__icon bi bi-person"></i><span
+                        class="menu__text">Sobre</span></a></li>
+
+
+            <li class="menu__item"><a href="#contato" class="menu__link"><i class="menu__icon bi bi-envelope"></i><span
+                        class="menu__text">Contato</span></a></li>
+        </ul>
+    </nav>
+
     <h1>Teste para verificar se as informações subiram para o git</h1>
 </body>
 
-<!-- continuar pelo video Desenvolvendo o Cabeçalho min 5 -->
+<!-- continuar pelo video Alternando entre os Temas Dark e Light-->
+
 </html>
