@@ -35,6 +35,11 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 i {
     color: var(--icon-color);
 }
