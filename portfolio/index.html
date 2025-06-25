@@ -18,7 +18,6 @@
             <ul class="menu menu--principal">
                 <li class="menu__item"><a href="#home" class="menu__link active"><span
                             class="menu__text">Home</span></a></li>
-
                 <li class="menu__item"><a href="#projetos" class="menu__link"><span
                             class="menu__text">Projetos</span></a></li>
 
@@ -29,14 +28,9 @@
                 </li>
             </ul>
         </nav>
-
-        <div class="header__brand">
-            <img class="brand__logo" src="assets/images/logo.png" alt="Logo ME">
-
-        </div>
         <div class="header__toggle"> <i id="toggleTheme" class="bi bi-moon-stars"></i></div>
-
     </header>
+
 
     <nav class="nav--mobile">
         <ul class="menu menu--mobile">
@@ -49,13 +43,13 @@
             <li class="menu__item"><a href="#sobre" class="menu__link"><i class="menu__icon bi bi-person"></i><span
                         class="menu__text">Sobre</span></a></li>
 
-
             <li class="menu__item"><a href="#contato" class="menu__link"><i class="menu__icon bi bi-envelope"></i><span
                         class="menu__text">Contato</span></a></li>
         </ul>
     </nav>
 
-    <main>
+
+    <main id="home">
         <div class="main__content1">
             <h1><b>Soluções Criativas & </b> Desenvolvimento Front-End</h1>
             <p>Maria Elisa Rodrigues, Cataguases-MG, Engenheira de Controle e Automação</p>
@@ -65,17 +59,18 @@
                 <li><a class="menu__link" href=""> <i class="menu__icon bi bi-linkedin"></i></a></li>
                 <li><a class="menu__link" href=""> <i class="menu__icon bi bi-instagram"></i></a></li>
             </ul>
-            <button class="btn btn--primary"><span>Ver Projetos</span><i class="bi bi-arrow-down-right"></i></button>
         </div>
 
         <div class="main__content2">
             <iframe src="https://www.youtube.com/watch?v=IPXIgEAGe4U&list=RDIPXIgEAGe4U&start_radio=1"
-                title="Música Motivacional" frameborder="0"></iframe>
+                title="Música Motivacional" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></iframe>
         </div>
     </main>
 
     <section class="technologies">
-        <h2>Conhecimento nas principais tecnologias do mercado</h2>
+        <h2>Conhecimento nas principais linguagens de programação</h2>
         <ul class="technologies__list">
             <li class="technologies__item">JS</li>
             <li class="technologies__item">PHP</li>
@@ -86,20 +81,20 @@
 
     <section id="projetos" class="projects">
         <h2>Projetos</h2>
-        <div class="projects_container">
+        <div class="projects__container">
             <div class="projects_card">
                 <img class="card__cover" src="assets/images/logo.png" alt="Capa">
                 <div class="card__body">
                     <h3 class="card__title">Protótipo mecatrônico modular de baixo custo</h3>
                     <p class="card__description">Desenvolvimento de um protótipo mecatrônico modular que identifica
                         obstáculos e movimento.</p>
-                    <ul class="card_list">
+                    <ul class="card__list">
                         <li>Uso do harwdare Arduino</li>
                     </ul>
-                    <ul class="card_list">
+                    <ul class="card__list">
                         <li>Sensores de baixo custo</li>
                     </ul>
-                    <ul class="card_list">
+                    <ul class="card__list">
                         <li>Baseado no kit de Lego
                         </li>
                     </ul>
@@ -108,27 +103,22 @@
                         <li class="technologies__item">Sensor</li>
                         <li class="technologies__item">Robô</li>
                     </ul>
-                    <div class="card__buttons">
-                        <button class="btn btn--primary"><span>Prévia</span><i
-                                class="bi bi-arrow-up-right"></i></button>
-                        <button class="btn btn"><span>Repositório</span></button>
-                    </div>
                 </div>
-
             </div>
 
-            <div class="projects_card" id="card--reverse">
+            <div class="projects__card" id="card--reverse">
                 <img class="card__cover" src="assets/images/logo.png" alt="Capa">
                 <div class="card__body">
                     <h3 class="card__title">Inversor de Frequência Monofásico Didático</h3>
-                    <p class="card__description">Criação de um inversor de frequência monofásico para uso nas aulas práticas do CEFET-MG, Campus Leopoldina.</p>
-                    <ul class="card_list">
+                    <p class="card__description">Criação de um inversor de frequência monofásico para uso nas aulas
+                        práticas do CEFET-MG, Campus Leopoldina.</p>
+                    <ul class="card__list">
                         <li>Eletrônica de Potência</li>
                     </ul>
-                    <ul class="card_list">
+                    <ul class="card__list">
                         <li>Informática</li>
                     </ul>
-                    <ul class="card_list">
+                    <ul class="card__list">
                         <li>Circuitos Elétricos</li>
                     </ul>
                     <ul class="technologies__list">
@@ -136,49 +126,105 @@
                         <li class="technologies__item">Python</li>
                         <li class="technologies__item">C++</li>
                     </ul>
-                    <div class="card__buttons">
-                        <button class="btn btn--primary"><span>Prévia</span><i
-                                class="bi bi-arrow-up-right"></i></button>
-                        <button class="btn btn"><span>Repositório</span></button>
-                    </div>
                 </div>
 
-                <a href="https://github.com/MariaElisa3638?tab=repositories">
+                <a href="https://www.linkedin.com/in/elidianaandrade/" target="_blank">
                     <button class="btn btn--primary"><span>Ver todos os projetos</span><i
                             class="bi bi-arrow-up-right"></i></button>
                 </a>
             </div>
+        </div>
+    </section>
 
-            <div class="projects_card">
-                <img class="card__cover" src="assets/images/logo.png" alt="Capa">
-                <div class="card__body">
-                    <h3 class="card__title">Josi's box</h3>
-                    <p class="card__description">Ecommerce de Livros</p>
-                    <ul class="card_list">
-                        <li>Listagem de favoritos</li>
-                    </ul>
-                    <ul class="card_list">
-                        <li>Carrinho de Compras</li>
-                    </ul>
-                    <ul class="card_list">
-                        <li>Listagem de favoritos</li>
-                    </ul>
-                    <ul class="technologies__list">
-                        <li class="technologies__item">JS</li>
-                        <li class="technologies__item">PHP</li>
-                        <li class="technologies__item">C++</li>
-                        <li class="technologies__item">Office</li>
-                    </ul>
-                    <div class="card__buttons">
-                        <button class="btn btn--primary"><span>Prévia</span><i
-                                class="bi bi-arrow-up-right"></i></button>
-                        <button class="btn btn"><span>Repositório</span></button>
-                    </div>
+    <section id="sobre" class="about">
+        <div class="about__content">
+            <img class="about__photo" src="assets/images/elisa-01.png" alt="">
+            <div class="about__description">
+                <h2>Sobre mim</h2>
+                <p>Maria Elisa Rodrigues.
+                    <br>Engenheira de Controle e Automação, apaixonada por tecnologia e inovação. Tenho experiência em
+                    desenvolvimento web, com foco em front-end, e estou sempre em busca de novos desafios e
+                    aprendizados.
+                    <br>Meu objetivo é criar soluções criativas e eficientes que melhorem a experiência do usuário e
+                    contribuam para o avanço tecnológico.
+                </p>
+                <div class="about__icons"><i class="bi bi-translate"></i>
+                    <span>Inglês: Intermédiario</span>
                 </div>
-
+                <div class="description__buttons">
+                    <a href="https://www.linkedin.com/in/elidianaandrade/" target="_blank">
+                        <button class="btn btn--primary">
+                            <span>Conecte-se comigo</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </a>
+                    <a href="">
+                        <button class="btn">
+                            <span>Currículo</span>
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
 
+        <div class="about__content2">
+            <div class="col1">
+                <div class="row1">
+                    <h3>Formação</h3>
+                    <h4>Engenheira de Controle e Automação</h4>
+                    <span>2019-2024</span>
+                    <div class="about__icons">
+                        <i class="bi bi-bank"></i>
+                        <span>Universidade Salvador</span>
+                    </div>
+                    <div class="about__icons">
+                        <i class="bi bi-mortarboard"></i>
+                        <span>Técnica em Mecânica</span>
+                    </div>
+                </div>
+
+                <div class="row2">
+                    <h3>Experiências</h3>
+                    <h4>Desenvolvedora Full-Stack</h4>
+                    <span>Sicoob Credimata. Set 2024 - Atual</span>
+                    <ul class="about__list">
+                        <li class="about__item">Desenvolvimento de funcionaidades e programas;</li>
+                    </ul>
+                </div>
+
+                <div class="row3">
+                    <h4>Auxiliar de Eletrotécnica Pleno</h4>
+                    <span>Engeselt. Dez 2023 - Set 2024</span>
+                    <ul class="about__list">
+                        <li class="about__item">Atualização da base do sistema Gis, usando pela empresa Energisa.</li>
+                    </ul>
+                </div>
+                  <ul class="menu menu--social">
+                        <li>
+                            <a href="https://github.com/elidianaandrade" class="menu__link" target="_blank">
+                                <i class="menu__icon bi bi-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="https://www.linkedin.com/in/elidianaandrade/" target="_blank">
+                                <i class="menu__icon bi bi-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="mailto:mariarodrigues.me2@gmail.com">
+                        <button class="btn btn--primary">
+                            <span class="email">mariarodrigues.me2@gmail.com</span>
+                        </button>
+                    </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contato">
+        <h2>Contate-me</h2>
+        <p>Estou disponível para serviços. Contate-me via e-mail e conecte-se comigo através do LinkedIN.</p>
     </section>
 
     <footer>
